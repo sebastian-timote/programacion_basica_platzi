@@ -14,9 +14,9 @@ function dibujarLinea(color, x_inicial, y_inicial, x_final, y_final) {
     lienzo.lineTo(x_final, y_final);
     lienzo.stroke()
     lienzo.closePath();//cierra el dibujo
-    
 }
 function dibujoPorClick() {
+    lienzo.clearRect(0,0, d.width, d.height);//esta linea borra dibujo anterior
     var lineas = parseInt(texto.value),
         espacio = ancho/lineas,
     l = 0,
