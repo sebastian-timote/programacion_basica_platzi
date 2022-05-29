@@ -1,0 +1,17 @@
+prog para manejar hardware con javsacript desde el servidor y controlar tambien tarjetas arduino
+
+pasos para prog con node en tarjetas arduino
+1. se ejecuta comendo que descargara la libreria para la comunicacion: npm i johnny-five
+2. quedo pendiente subirle el archivo a la arduino que permite la conexion entre arduino y node
+    - se ingresa a programa arduino.ide
+    - file/examples/firmata/ standardFirmata
+    - verificamos y subimos a la arduino
+3. para que funcione hacemos lo siguiente:
+    - tenemos que instalar python version 2.7.x en este caso la 2.7.18
+    - creamos una variable de estado equipo/click derecho propiedades/configuracion avanzada de sistema/ variables de entorno/en variables del sistema buscamos PATH y editar/ y agregamos ruta de python ej "C:\Python27" verificamos en consola cmd con python --version
+    - nos vamos a cmd como ADMINISTRADOR y ejecutamos los sgtes comandos:
+        npm install --global --production windows-build-tools
+        npm install --global node-gyp
+    - despues de eso ejecutamos:
+        npm i johnny-five
+    - conectamos arduino y node nombrearchivo.js

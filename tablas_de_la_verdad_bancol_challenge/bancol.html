@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bancol banco de la republica</title>
+    <link rel="stylesheet" href="bancol.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Bancol banco de la republica</h1>
+        <h4>Bienvenido a Bancol - transacciones seguras</h4>
+        <h4>Horario de atencion: de 9:00 a 12:00 y de 15:00 a 20:00</h4>
+    </div>
+    <div class="cuerpo">
+            <p>ingresa los datos para realizar la transferencia a continuacion:</p>
+            <label for="bancos_destino">Ingrese banco destino:</label><br/>
+            <select id="bancos_destino">
+                <option value="1">Bancol </option>
+                <option value="2">Bancomep</option>
+                <option value="3">Banca caja social</option>
+                <option value="4">Banco del himalaya</option>
+            </select>
+            <p class="inp_ban">Ingrese cuenta de destino:</p>
+            <input type="number" id="cuenta_destino">
+            <p class="inp_ban">Ingrese monto a transferir:</p>
+            <input type="number" id="monto_transferir" class="inp_cuenta_destino"><br/>
+            <input type="button" id="retirar" value="realizar transferencia">
+    </div>
+    <div id="datos_transferencia" class="transf_data"></div>
+    <script src="bancol.js"></script>
+</body>
+</html>
